@@ -3,11 +3,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
+const cors=require('cors')
 require('dotenv').config();
 // console.log(process.env.MONGODB_URL);
 
 // Middleware
 app.use(bodyParser.json());
+app.use(cors())
 
 // Database Configuration
 
