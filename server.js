@@ -30,7 +30,7 @@ app.use('/auth', userRoutes);
 
 // all user 
 const userListRoutes = require('./routes/userListRoutes'); 
-app.use('/auth', userListRoutes); 
+app.use('/users', userListRoutes); 
 
 
 // Start Server
